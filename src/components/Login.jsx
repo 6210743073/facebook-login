@@ -31,7 +31,7 @@ const Login = () => {
   return (
     <section className="w-screen h-screen bg-gray-100">
       <Register showRegister={showRegister} setshowRegister={setshowRegister} />
-      <div className=" container mx-auto flex gap-x-20 justify-between px-36 py-36">
+      <div className="mx-auto flex px-36 py-36">
         <div className="w-full">
           <img
             src={img}
@@ -39,7 +39,8 @@ const Login = () => {
             className="w-[300px] relative -left-7 top-5 z-0"
           />
           <p className="text-[26px] font-medium w-full">
-            Facebook helps you connect and share with the people in your life.
+            Facebook helps you connect and share <br></br>with the people in
+            your life.
           </p>
         </div>
         <div className="relative -top-3">
@@ -96,7 +97,7 @@ const Login = () => {
           </p>
         </div>
       </div>
-      {<Footer />}
+      <Footer />
     </section>
   );
 };
